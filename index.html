@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+    <title>Renii's Website</title>
+    <link rel="icon" type="image/x-icon" href="media/cover.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <!--Clicker-->
+    <div class="clickerMain">
+        <div class="clickerContent">
+            <button class="clickerButton" id="closeClickerButton">Close</button>
+            <h2 class="center" style="margin-top: 5px;">Idle Web Clicker</h2>
+            <h4 class="center"><i>The points are not decimal points, they break up thousandths.</i></h4>
+            <h3 class="center" id="clickDisplay">Clicks: x</h3>
+            <h3 class="center" id="clickPerSecondDisplay">Clicks Per Second: x</h3>
+            <h3 class="center" id="clickPerClickDisplay">Clicks Per Click: x</h3>
+            <button id="clickButton">Click</button>
+            <div id="purchasesSectorBorder">
+                <div id="purchascesClassSelect">
+                    <button class="purchasesClassSelButton" id="purchasesSel1">Upgrades</button>
+                    <button class="purchasesClassSelButton" id="purchasesSel2">Machines</button>
+                    <button class="purchasesClassSelButton" id="purchasesSel3">Codes</button>
+                </div>
+                <div id="purchasesSector">
+                    <!--Upgrades-->
+                    <div id="purchasesClass1">
+                        <div class="purchaseContainer" id="cursorUpgrade">
+                            <h3 class="center"><b>Cursor Upgrade</b></h3>
+                            <div id="cursorUpgradeContainer">
+                                <h4 class="center" style="margin-bottom: 5px;">Tier I</h4>
+                                <h4 class="center">Upgrades your Clicks Per Click by +1</h4>
+                                <h4 class="center" id="cursorUpgradeOwnDSP">You Own: 0</h4>
+                                <button class="clickerButton" id="cursorButton">Purchase: 15</button>
+                                <h4 class="center" style="margin-bottom: 5px;">Tier II</h4>
+                                <h4 class="center">Upgrades your Clicks Per Click by +10</h4>
+                                <h4 class="center" id="cursorUpgrade2OwnDSP">You Own: 0</h4>
+                                <button class="clickerButton" id="cursor2Button" style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 10px;">Purchase: 15</button>
+                            </div>
+                        </div>
+                        <div class="purchaseContainer" id="clickerUpgrade" style="margin-left: 55%; margin-top: -70px;">
+                            <h3 class="center"><b>Clicker Upgrade</b></h3>
+                            <div id="clickerUpgradeContainer">
+                                <h4 class="center" style="margin-bottom: 5px;">Tier I</h4>
+                                <h4 class="center">Adds +1 to your clicker multiplier.</h4>
+                                <h4 class="center" id="clickerUpgradeOwnDSP">You Own: 0</h4>
+                                <button class="clickerButton" id="clickerUButton" style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 10px;">Purchase: 500</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Machines-->
+                    <div id="purchasesClass2">
+                        <div class="purchaseContainer" id="clicker">
+                            <h3 class="center"><b>Clicker</b></h3>
+                            <div id="clickerContainer">
+                                <h4 class="center">Gain +1 Click Per Second</h4>
+                                <h4 class="center" id="clickerOwnDSP">You Own: 0</h4>
+                                <button class="clickerButton" id="clickerPurchaseButton">Purchase: 100</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Codes-->
+                    <div id="purchasesClass3">
+                        <h2 class="center">Codes</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="menuText" id="closedClickDisplay">Clicks: 0</h3>
+    </div>
+
+    <!--Switcher-->
+    <div class="switcherMain">
+        <button class="switcherButton" id="switcherButton1">Renders</button>
+        <button class="switcherButton" id="switcherButton2">Game</button>
+    </div>
+
+    <!--Website content-->
+    <div id="classes">
+        <div class="contentClass" id="class1">
+            <h1>Renders</h1>
+            <h2>Primarily using blender Cycles, but there's the occasional Eevee render too.</h2>
+            <h4>Download blender at <i><a href="https://blender.org/download" target="_blank">Blender.org</a></i></h4>
+            <img class="img1080" src="media/renders/1.png">
+            <img class="img1080" src="media/renders/2.png">
+            <img class="img1080" src="media/renders/6.png">
+            <img class="img1080" src="media/renders/10.png">
+            <img class="imgPhone" src="media/renders/3.png">
+            <img class="imgPhone" src="media/renders/7.png">
+            <img class="imgPhone" src="media/renders/9.png">
+            <img class="img1K" src="media/renders/4.png">
+            <img class="img1K" src="media/renders/5.png">
+            <img class="img1K" src="media/renders/8.gif">
+            <video class="img1080" autoplay muted loop>
+                <source src="media/renders/vid1.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="contentClass" id="class2">
+            <h1>Game</h1>
+            <h2><i>Please note that this does take a while to load, due to it being a relatively large game.</i></h2>
+            <iframe src="https://3Dgame.reniivali.repl.co" scrolling="No" height="800px" width="1500px" style="border: none; border-radius: 10px;"></iframe>
+        </div>
+    </div>
+</body>
